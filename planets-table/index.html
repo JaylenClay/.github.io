@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jaylen Clay">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <!-- Wrap the top-level heading in a header element -->
+    <header>
+        <h1>Planets Data</h1>
+    </header>
+
+    <!-- Add a main element to contain the table -->
+    <main>
+        <!-- Add the table element. This will contain your table caption, column group, table head, table body, and the data. -->
+        <table>
+
+            <!-- The caption element should be the first child of the table element, and wrap the following text and link.-->
+            <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+
+            <!-- The second child of the table element should be the colgroup element, which also contains several col elements, and helps define the purpose of the table columns. -->
+            <colgroup>
+                <!-- Add a col element for each column in your table with title attributes -->
+                <col style="width: 20%;" title="Column 1">
+                <col style="width: 20%;" title="Column 2">
+                <!-- Add more col elements as needed for other columns -->
+            </colgroup>
+
+            <!-- The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. -->
+            <thead>
+                <tr>
+                    <!-- Add th elements for each column header with scope attribute -->
+                    <th scope="col">Column 1 Header</th>
+                    <th scope="col">Column 2 Header</th>
+                    <!-- Add more th elements as needed for other columns -->
+                </tr>
+            </thead>
+
+            <!-- The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
+            <tbody>
+                <!-- Add a row for each set of data -->
+                <tr>
+                    <!-- Add th elements for row headers with scope attribute -->
+                    <th scope="row">Row 1 Header</th>
+                    <!-- Add td elements for each column in the row -->
+                    <td>Data 1, Column 1</td>
+                    <td>Data 1, Column 2</td>
+                    <!-- Add more td elements as needed for other columns -->
+                </tr>
+                <tr>
+                    <th scope="row">Row 2 Header</th>
+                    <td>Data 2, Column 1</td>
+                    <td>Data 2, Column 2</td>
+                    <!-- Add more td elements as needed for other columns -->
+                </tr>
+                <!-- Add more rows as needed for additional data -->
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
